@@ -1,2 +1,3 @@
-"meu primeiro projeto do git hub" 
-link: https://primeiro-projeto-zeta-five.vercel.app/
+Primeiro projeto pro git hub
+
+link do projeto: https://primeiro-projeto-zeta-five.vercel.app/
