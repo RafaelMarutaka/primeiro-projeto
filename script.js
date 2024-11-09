@@ -54,6 +54,21 @@ menu.addEventListener("click", function (event) {
 
         addToCart(name, price)
 
+                Toastify({
+            text: "Produto adicionado ao carrinho com sucesso",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#008000",
+            },
+            onClick: function () { } // Callback after click
+        }).showToast();
+
     }
 
 })
