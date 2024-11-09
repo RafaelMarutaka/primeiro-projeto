@@ -136,7 +136,7 @@ function updateCartMOdel() {
         currency: "BRL"
     });
 
-    cartCounter.innerHTML = cart.maxLength;
+    cartCounter.innerHTML = cart.length;
 
 }
 
