@@ -15,7 +15,7 @@ cartBtn.addEventListener("click", function () {
 
     updateCartMOdel();
 
-    cartModal.style.display = "flex"
+    cartModal.style.display = "flex "
 
 })
 
@@ -55,7 +55,7 @@ menu.addEventListener("click", function (event) {
         addToCart(name, price)
 
                 Toastify({
-            text: "Produto adicionado ao carrinho com sucesso",
+            text: "item adicionado ao carrinho com sucesso",
             duration: 3000,
             destination: "https://github.com/apvarun/toastify-js",
             newWindow: true,
@@ -147,6 +147,22 @@ cartItensContainer.addEventListener("click", function (event) {
         const name = event.target.getAttribute("data-name")
 
         removeItemCart(name);
+
+          Toastify({
+            text: "Item removido do carrinho com sucesso",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                background: "#008000",
+            },
+            onClick: function () { } // Callback after click
+        }).showToast();
+
     }
 })
 
