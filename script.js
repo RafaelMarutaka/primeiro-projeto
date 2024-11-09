@@ -158,7 +158,7 @@ cartItensContainer.addEventListener("click", function (event) {
             position: "right", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
-                background: "#008000",
+                background: "#FF0000",
             },
             onClick: function () { } // Callback after click
         }).showToast();
